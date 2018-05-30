@@ -21,13 +21,12 @@ public class SelectionSorting {
 		sortList.add(6);
 		sortList.add(2);
 		
-		
 		List<Integer> res = selectionSort(sortList);
 		System.out.println(res);
 	}
 	
 	/**
-	 * 
+	 * 选择排序
 	 */
 	public static List<Integer> selectionSort(List<Integer> sortList){
 		List<Integer> res = new ArrayList<Integer>();
@@ -37,13 +36,11 @@ public class SelectionSorting {
 			res.add(sortList.get(smallestIndex));
 			sortList.remove(smallestIndex );
 		}
-		
-		
 		return res;
 	}
 	
 	/**
-	 * 查找最新元素的下标
+	 * 查找最小元素的下标
 	 * @return
 	 */
 	public static int getSmallest(List<Integer> sortList){
